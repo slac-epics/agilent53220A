@@ -1,0 +1,3 @@
+perl /afs/slac/g/lcls/epics/R3-14-12-4_1-1/base/base-R3-14-12-4_1-1/bin/linux-x86_64/convertRelease.pl -a linux-x86_64 -t ../.. envPaths
+Installing startup file ../../startup/sioc-b084-rfLab1/envPaths
+Installing startup file ../../startup/sioc-b084-rfLab1/st.cmd

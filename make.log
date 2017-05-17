@@ -1,0 +1,53 @@
+/usr/bin/make -C ./configure install 
+make[1]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/configure'
+/usr/bin/make -C O.linux-x86_64 -f ../Makefile TOP=../.. T_A=linux-x86_64 install
+make[2]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/configure/O.linux-x86_64'
+/afs/slac/g/lcls/epics/R3-14-12-4_1-1/base/base-R3-14-12-4_1-1/configure/RULES_BUILD:161: target `../../display' given more than once in the same rule.
+perl /afs/slac/g/lcls/epics/R3-14-12-4_1-1/base/base-R3-14-12-4_1-1/bin/linux-x86_64/convertRelease.pl checkRelease
+make[2]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/configure/O.linux-x86_64'
+make[1]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/configure'
+/usr/bin/make -C ./agilent53220ASup install 
+make[1]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup'
+/usr/bin/make -C ./srcDisplay install 
+make[2]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup/srcDisplay'
+/usr/bin/make -C O.linux-x86_64 -f ../Makefile TOP=../../.. T_A=linux-x86_64 install
+make[3]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup/srcDisplay/O.linux-x86_64'
+/afs/slac/g/lcls/epics/R3-14-12-4_1-1/base/base-R3-14-12-4_1-1/configure/RULES_BUILD:161: target `../../../display' given more than once in the same rule.
+make[3]: Nothing to be done for `install'.
+make[3]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup/srcDisplay/O.linux-x86_64'
+make[2]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup/srcDisplay'
+/usr/bin/make -C ./Db install 
+make[2]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup/Db'
+/usr/bin/make -C O.linux-x86_64 -f ../Makefile TOP=../../.. T_A=linux-x86_64 install
+make[3]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup/Db/O.linux-x86_64'
+/afs/slac/g/lcls/epics/R3-14-12-4_1-1/base/base-R3-14-12-4_1-1/configure/RULES_BUILD:161: target `../../../display' given more than once in the same rule.
+make[3]: Nothing to be done for `install'.
+make[3]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup/Db/O.linux-x86_64'
+make[2]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup/Db'
+make[1]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ASup'
+/usr/bin/make -C ./agilent53220ATestApp install 
+make[1]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp'
+/usr/bin/make -C ./src install 
+make[2]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp/src'
+/usr/bin/make -C O.linux-x86_64 -f ../Makefile TOP=../../.. T_A=linux-x86_64 install
+make[3]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp/src/O.linux-x86_64'
+/afs/slac/g/lcls/epics/R3-14-12-4_1-1/base/base-R3-14-12-4_1-1/configure/RULES_BUILD:161: target `../../../display' given more than once in the same rule.
+make[3]: Nothing to be done for `install'.
+make[3]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp/src/O.linux-x86_64'
+make[2]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp/src'
+/usr/bin/make -C ./Db install 
+make[2]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp/Db'
+/usr/bin/make -C O.linux-x86_64 -f ../Makefile TOP=../../.. T_A=linux-x86_64 install
+make[3]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp/Db/O.linux-x86_64'
+/afs/slac/g/lcls/epics/R3-14-12-4_1-1/base/base-R3-14-12-4_1-1/configure/RULES_BUILD:161: target `../../../display' given more than once in the same rule.
+make[3]: Nothing to be done for `install'.
+make[3]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp/Db/O.linux-x86_64'
+make[2]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp/Db'
+make[1]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/agilent53220ATestApp'
+/usr/bin/make -C ./iocBoot install 
+make[1]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/iocBoot'
+/usr/bin/make -C ./sioc-b084-rfLab1 install 
+make[2]: Entering directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/iocBoot/sioc-b084-rfLab1'
+make[2]: Nothing to be done for `install'.
+make[2]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/iocBoot/sioc-b084-rfLab1'
+make[1]: Leaving directory `/afs/slac.stanford.edu/g/lcls/vol8/epics/iocTop/users/ernesto/gitSandBox/agilent53220A/iocBoot'

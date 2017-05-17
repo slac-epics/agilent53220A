@@ -1,0 +1,20 @@
+Keysight 53220A/230A Universal Frequency Counter/Timer 
+Also known as the Agilent 53220A/230A Universal Frequency Counter/Timer
+The controls interface will be via ethernet over a remote interface 
+using the SCPI programming language.
+
+
+The 53220A/53230A is a 2U, 1/2-module width LXI Class C instrument. The 2U,
+1/2-module width references refer to the 53220A/53230A’s physical size relative to
+standard EIA rack cabinet dimensions. LXI, an acronym for LAN eXtensions for
+Instrumentation, is an instrumentation standard for devices that use the Ethernet (LAN)
+as their primary remote communications interface.
+
+Here we will EPICS asyn + streamdevice to control and monitor this device.
+
+In order, to build this module modify the following as needed:
+<TOP>/RELEASE_SITE
+<TOP>/configure/RELEASE
+<TOP>/configure/CONFIG_SITE
+<TOP>/configure/CONFIG_SITE.Common.$T_A (add/modify if needed)
+
