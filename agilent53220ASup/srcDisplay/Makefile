@@ -8,9 +8,6 @@ include $(TOP)/configure/CONFIG
 # You can override the default installation path.
 #INSTALL_LOCATION=
 
-# Rules for installing EDM files:
-CFG +=  CONFIG_EDL
-
 # EDM Screens to install
 
 # Obtained the edm screen from Garth`s Application
