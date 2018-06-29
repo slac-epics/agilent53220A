@@ -1,6 +1,9 @@
 # KeySight: Agilent Model 53220A universal Frequency Counter/Timer
 #           350 MHz --- 100 psec
 
+R1.0.1: 2018-06-28 B. Hill
+	Removed local CONFIG_EDL and CONFIG_PROTO files that conflict w/ base.
+
 R1.0.0: 2017-05-17 J. Vasquez                
     * Initial Import taken from LaserSoft IOC Application.
       This module can now be shared by other applications
