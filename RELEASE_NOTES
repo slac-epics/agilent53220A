@@ -1,5 +1,8 @@
 # KeySight: Agilent Model 53220A universal Frequency Counter/Timer
 #           350 MHz --- 100 psec
+#
+R1.0.2: 2018-07-18 K. Kim
+        build against asyn/R4.32-1.0.0 and streamdeivce/R2.7.7-1.4.2
 
 R1.0.1: 2018-06-28 B. Hill
 	Removed local CONFIG_EDL and CONFIG_PROTO files that conflict w/ base.
