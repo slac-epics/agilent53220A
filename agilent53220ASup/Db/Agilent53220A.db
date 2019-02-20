@@ -241,7 +241,7 @@ record(ai, "$(DEVICE)GET_DISPDIG") {
   info(autosaveFields, "DESC EGU HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC")
 }
 
-record(ao, "$(DEVICE)SET_TRIG_PERCENT") {
+record(ao, "$(DEVICE)SET_DISPDIG") {
   field(DESC, "Display Digit")
   field(DTYP, "stream")
   field(OUT, "@Agilent53220A.proto SET_DISPDIG $(PORT)")
