@@ -26,3 +26,12 @@ GET_COUPLING        { out "INP:COUP?";			in "INP:COUP?\r\n%{AC|DC}";}
 SET_COUPLING        { out "INP:COUP %{AC|DC}";  in "%*s"; @init{ GET_COUPLING;}}
 GET_NOISE_REJ       { out "INP:NREJ?";			in "INP:NREJ?\r\n%{OFF|ON}";}
 SET_NOISE_REJ       { out "INP:NREJ %{OFF|ON}";  in "%*s"; @init{ GET_NOISE_REJ;}}
+GET_ROSC_SOUR       { out "ROSC:SOUR?";            in "ROSC:SOUR?\r\n%{INT|EXT}";}
+SET_ROSC_SOUR       { out "ROSC:SOUR %{INT|EXT}";  in "%*s"; @init{ GET_ROSC_SOUR;}}
+GET_ROSC_EXTFREQ    { out "ROSC:EXT:FREQ?";        in "ROSC:EXT:FREQ?\r\n%{+1.00000000E+006|+5.00000000E+006|+1.00000000E+007}";}
+SET_ROSC_EXTFREQ    { out "ROSC:EXT:FREQ %{1E6|5E6|10E6}"; in "%*s"; @init{ GET_ROSC_EXTFREQ;}}
+GET_DISPDIG_AUTO    { out "DISP:DIG:MASK:AUTO?";        in "DISP:DIG:MASK:AUTO?\r\n%{0|1}";}
+SET_DISPDIG_AUTO    { out "DISP:DIG:MASK:AUTO %{OFF|ON}";  in "%*s"; @init{ GET_DISPDIG_AUTO;}}
+GET_DISPDIG         { out "DISP:DIG:MASK?";        in "DISP:DIG:MASK?\r\n%d";}
+SET_DISPDIG         { out "DISP:DIG:MASK %d";      in "%*s"; @init{ GET_DISPDIG;}}
+

@@ -171,6 +171,90 @@ record(bo, "$(DEVICE)SET_NOISE_REJ") {
   info(autosaveFields, "VAL ZSV OSV")
 }
 
+record(bi, "$(DEVICE)GET_ROSC_SOUR") {
+  field(DESC, "REF Oscillator Source")
+  field(DTYP, "stream")
+  field(INP,  "@Agilent53220A.proto GET_ROSC_SOUR $(PORT)")
+  field(ZNAM,  "INT")
+  field(ONAM,  "ON")
+  info(autosaveFields, "ZSV OSV")
+}
+
+record(bo, "$(DEVICE)SET_ROSC_SOUR") {
+  field(DESC, "REF Oscillator Source")
+  field(DTYP, "stream")
+  field(OUT,  "@Agilent53220A.proto SET_ROSC_SOUR $(PORT)")
+  field(ZNAM, "INT")
+  field(ONAM, "EXT")
+  field(FLNK, "$(DEVICE)GET_ROSC_SOUR")
+  info(autosaveFields, "VAL ZSV OSV")
+}
+
+
+record(mbbi, "$(DEVICE)GET_ROSC_EXTFREQ") {
+  field(DESC, "EXT REF Oscillator Frequency")
+  field(DTYP, "stream")
+  field(INP, "@Agilent53220A.proto GET_ROSC_EXTFREQ $(PORT)")
+  field(ZRST, "1MHz")
+  field(ONST, "5MHz")
+  field(TWST, "10MHz")
+  info(autosaveFields, "UNSV COSV ZRSV ONSV TWSV")
+}
+
+record(mbbo, "$(DEVICE)SET_ROSC_EXTFREQ") {
+  field(DESC, "EXT REF Oscillator Frequency")
+  field(DTYP, "stream")
+  field(OUT, "@Agilent53220A.proto SET_ROSC_EXTFREQ $(PORT)")
+  field(ZRST, "1MHz")
+  field(ONST, "5MHz")
+  field(TWST, "10MHz")
+  field(FLNK, "$(DEVICE)GET_ROSC_EXTFREQ")
+  info(autosaveFields, "VAL UNSV COSV ZRSV ONSV TWSV")
+}
+
+
+record(bi, "$(DEVICE)GET_DISPDIG_AUTO") {
+  field(DESC, "Display Digit Auto")
+  field(DTYP, "stream")
+  field(INP, "@Agilent53220A.proto GET_DISPDIG_AUTO $(PORT)")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosaveFields, "ZSV OSV")
+}
+
+record(bo, "$(DEVICE)SET_DISPDIG_AUTO") {
+  field(DESC, "Display Digit Auto")
+  field(DTYP, "stream")
+  field(OUT, "@Agilent53220A.proto SET_DISPDIG_AUTO $(PORT)")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  field(FLNK, "$(DEVICE)GET_DISPDIG_AUTO")
+  info(autosaveFields, "VAL ZSV OSV")
+}
+
+record(ai, "$(DEVICE)GET_DISPDIG") {
+  field(DESC, "Display Digit")
+  field(DTYP, "stream")
+  field(INP, "@Agilent53220A.proto GET_DISPDIG $(PORT)")
+  field(EGU, "digits")
+  field(PREC, "0")
+  info(autosaveFields, "DESC EGU HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC")
+}
+
+record(ao, "$(DEVICE)SET_TRIG_PERCENT") {
+  field(DESC, "Display Digit")
+  field(DTYP, "stream")
+  field(OUT, "@Agilent53220A.proto SET_DISPDIG $(PORT)")
+  field(EGU, "digits")
+  field(PREC, "0")
+  field(FLNK, "$(DEVICE)GET_DISDIG")
+  info(autosaveFields, "VAL DESC EGU HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC")
+}
+
+
+
+
+
 #! Further lines contain data used by VisualDCT
 #! View(0,0,1.0)
 #! Record("$(DEVICE)IDENTITY",20,22,0,0,"$(DEVICE)IDENTITY")
