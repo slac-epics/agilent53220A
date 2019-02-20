@@ -20,11 +20,11 @@ GET_TRIG_LEVEL      { out "INP:LEV:ABS?";       in "INP:LEV:ABS?\r\n%E";}
 SET_TRIG_LEVEL      { out "INP:LEV:ABS %E";     in "%*s"; @init{ GET_TRIG_LEVEL;}}
 GET_TRIG_PERCENT    { out "INP:LEV:REL?";       in "INP:LEV:REL?\r\n%d";}
 SET_TRIG_PERCENT    { out "INP:LEV:REL %d";     in "%*s"; @init{ GET_TRIG_PERCENT;}}
-GET_AUTO_LEVEL      { out "INP:LEV:AUTO?";       in "INP:LEV:AUTO?\r\n%{OFF|ON|ONCE}";}
+GET_AUTO_LEVEL      { out "INP:LEV:AUTO?";       in "INP:LEV:AUTO?\r\n%{0|1|2}";}
 SET_AUTO_LEVEL      { out "INP:LEV:AUTO %{OFF|ON|ONCE}";     in "%*s"; @init{ GET_AUTO_LEVEL;}}
 GET_COUPLING        { out "INP:COUP?";			in "INP:COUP?\r\n%{AC|DC}";}
 SET_COUPLING        { out "INP:COUP %{AC|DC}";  in "%*s"; @init{ GET_COUPLING;}}
-GET_NOISE_REJ       { out "INP:NREJ?";			in "INP:NREJ?\r\n%{OFF|ON}";}
+GET_NOISE_REJ       { out "INP:NREJ?";			in "INP:NREJ?\r\n%{0|1}";}
 SET_NOISE_REJ       { out "INP:NREJ %{OFF|ON}";  in "%*s"; @init{ GET_NOISE_REJ;}}
 GET_ROSC_SOUR       { out "ROSC:SOUR?";            in "ROSC:SOUR?\r\n%{INT|EXT}";}
 SET_ROSC_SOUR       { out "ROSC:SOUR %{INT|EXT}";  in "%*s"; @init{ GET_ROSC_SOUR;}}
