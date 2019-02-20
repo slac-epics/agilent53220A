@@ -176,7 +176,7 @@ record(bi, "$(DEVICE)GET_ROSC_SOUR") {
   field(DTYP, "stream")
   field(INP,  "@Agilent53220A.proto GET_ROSC_SOUR $(PORT)")
   field(ZNAM,  "INT")
-  field(ONAM,  "ON")
+  field(ONAM,  "EXT")
   info(autosaveFields, "ZSV OSV")
 }
 
@@ -247,7 +247,7 @@ record(ao, "$(DEVICE)SET_DISPDIG") {
   field(OUT, "@Agilent53220A.proto SET_DISPDIG $(PORT)")
   field(EGU, "digits")
   field(PREC, "0")
-  field(FLNK, "$(DEVICE)GET_DISDIG")
+  field(FLNK, "$(DEVICE)GET_DISPDIG")
   info(autosaveFields, "VAL DESC EGU HHSV HIGH HIHI HSV LLSV LOLO LOW LSV PREC")
 }
 
