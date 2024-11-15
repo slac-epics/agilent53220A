@@ -1,5 +1,7 @@
 # KeySight: Agilent Model 53220A universal Frequency Counter/Timer
 #           350 MHz --- 100 psec
+R1.0.7  2024-11-14  lorelli
+    Upgrade to asyn/R4.39-1.0.2, streamdevice/R2.8.9-1.2.2
 
 R1.0.6  2022-02-22  egumtow
 	upgrade to asyn/R4.39-1.0.1, stream/R2.8.9-1.2.1
